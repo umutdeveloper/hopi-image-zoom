@@ -1,6 +1,6 @@
-# Hopi Image Zoom Library
+# Image Zoom Library
 
-Hopi Image Zoom is a versatile JavaScript library that enables users to zoom in and out on images, as well as pan around them with ease. Designed with a focus on modern design patterns, this library supports advanced interaction methods, including double-tap zooming for MacOS trackpads and custom key bindings for a seamless user experience.
+Image Zoom is a versatile JavaScript library that enables users to zoom in and out on images, as well as pan around them with ease. Designed with a focus on modern design patterns, this library supports advanced interaction methods, including double-tap zooming for MacOS trackpads and custom key bindings for a seamless user experience.
 
 ## Features
 
@@ -15,7 +15,7 @@ Hopi Image Zoom is a versatile JavaScript library that enables users to zoom in 
 
 ## Design Patterns
 
-Hopi Image Zoom was developed with clean code principles in mind, utilizing various design patterns:
+Image Zoom was developed with clean code principles in mind, utilizing various design patterns:
 
 - **Facade Pattern:** The `ImageZoom` class serves as the main interface, hiding the complexity of underlying subsystems like view strategies, state management, and notifications.
 - **Strategy Pattern:** The `ViewStrategy` class handles DOM interaction, allowing for easy customization. The default strategy provided is `ContainerViewStrategy`, but users can extend `ViewStrategy` to implement their own.
@@ -26,15 +26,15 @@ Hopi Image Zoom was developed with clean code principles in mind, utilizing vari
 
 ## Installation
 
-You can install Hopi Image Zoom via npm:
+You can install Image Zoom via npm:
 
 ```bash
-npm install hopi-image-zoom
+npm install @umutcakir/image-zoom
 ```
 
 ## Usage
 
-Here’s a simple example of how to use the Hopi Image Zoom library:
+Here’s a simple example of how to use the Image Zoom library:
 
 ```html
 <div id="zoom-container">
@@ -43,7 +43,7 @@ Here’s a simple example of how to use the Hopi Image Zoom library:
 ```
 
 ```javascript
-import { ImageZoom, ContainerViewStrategy } from 'hopi-image-zoom';
+import { ImageZoom, ContainerViewStrategy } from '@umutcakir/image-zoom';
 
 const containerElement = document.getElementById('zoom-container');
 const viewStrategy = new ContainerViewStrategy(containerElement as HTMLDivElement);
@@ -58,7 +58,7 @@ imageZoom.zoomOut();
 imageZoom.destroy();
 ```
 
-For detailed examples and advanced usage, please refer to the [documentation](https://github.com/umutdeveloper/hopi-image-zoom).
+For detailed examples and advanced usage, please refer to the [documentation](https://github.com/umutdeveloper/image-zoom).
 
 ## Contributing
 
@@ -66,4 +66,4 @@ Contributions are welcome! Please fork the repository and submit a pull request 
 
 ## Repository
 
-For more detailed information, visit the [GitHub repository](https://github.com/umutdeveloper/hopi-image-zoom).
+For more detailed information, visit the [GitHub repository](https://github.com/umutdeveloper/image-zoom).
