@@ -13,6 +13,12 @@ Image Zoom is a versatile JavaScript library that enables users to zoom in and o
 - **Command Pattern:** For handling zoom and pan commands efficiently.
 - **Observer Pattern:** Real-time updates to the DOM during interactions, ensuring smooth user experience.
 
+## Demo
+
+You can try the live demo of the library at the following address:
+
+[https://umutdeveloper.github.io/image-zoom/](https://umutdeveloper.github.io/image-zoom/).
+
 ## Design Patterns
 
 Image Zoom was developed with clean code principles in mind, utilizing various design patterns:

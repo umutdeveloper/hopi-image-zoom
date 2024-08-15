@@ -1,10 +1,11 @@
 import { ImageZoom, ContainerViewStrategy } from './lib';
 import './style.css';
 
+const BASE_HREF = import.meta.env.VITE_BASE_HREF;
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
     <div class="zoom-container">
-      <img src="/image-1.jpg" />
+      <img src="${BASE_HREF}/image-1.jpg" />
     </div>
   </div>
 `;

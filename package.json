@@ -1,6 +1,6 @@
 {
   "name": "@umutcakir/image-zoom",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "dist/image-zoom.umd.js",
   "module": "dist/image-zoom.es.js",
   "types": "dist/index.d.ts",
