@@ -8,11 +8,7 @@ export abstract class CommandHandler extends AbstractHandler {
   }
   public handle(state: State, event?: Event): State | null {
     if (this.command.isExecutable(state, event)) {
-      if (event) {
-        return this.command.execute(state, event);
-      } else {
-        return this.command.execute(state);
-      }
+      return this.command.execute(state, event);
     }
     return super.handle(state, event);
   }
