@@ -1,5 +1,4 @@
-import { ImageZoom } from './lib';
-import { ContainerViewStrategy } from './lib/strategies/container-view.strategy';
+import { ImageZoom, ContainerViewStrategy } from './lib';
 import './style.css';
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `

@@ -53,3 +53,6 @@ export class ImageZoom {
     this.viewStrategy.destroy();
   }
 }
+
+export { ContainerViewStrategy } from './strategies/container-view.strategy';
+export { AbstractViewStrategy } from './strategies/view.strategy';

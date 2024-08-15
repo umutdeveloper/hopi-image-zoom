@@ -1,6 +1,6 @@
 {
   "name": "hopi-image-zoom",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/hopi-image-zoom.umd.js",
   "module": "dist/hopi-image-zoom.es.js",
   "types": "dist/index.d.ts",
@@ -10,8 +10,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "build": "tsc && vite build"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",
