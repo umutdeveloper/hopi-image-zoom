@@ -20,6 +20,7 @@ export class ContainerViewStrategy extends AbstractViewStrategy {
     this.element.style.overflow = 'hidden';
     this.element.style.backgroundColor = '#111111';
     this.element.style.textAlign = 'center';
+    this.imageElement.style.transition = 'all 50ms ease';
     this.imageElement.style.objectFit = 'contain';
     this.imageElement.style.width = '100%';
     this.imageElement.style.height = '100%';
@@ -30,14 +31,16 @@ export class ContainerViewStrategy extends AbstractViewStrategy {
   }
 
   update(viewChanges: ObserverChanges): void {
-    if (viewChanges.zoomLevel) {
-      this.imageElement.style.width = `${viewChanges.zoomLevel * 100}%`;
-      this.imageElement.style.height = `${viewChanges.zoomLevel * 100}%`;
-    }
-    if (viewChanges.rect) {
-      this.imageElement.style.left = `${viewChanges.rect.offsetX}px`;
-      this.imageElement.style.top = `${viewChanges.rect.offsetY}px`;
-    }
+    requestAnimationFrame(() => {
+      if (viewChanges.zoomLevel) {
+        this.imageElement.style.width = `${viewChanges.zoomLevel * 100}%`;
+        this.imageElement.style.height = `${viewChanges.zoomLevel * 100}%`;
+      }
+      if (viewChanges.rect) {
+        this.imageElement.style.left = `${viewChanges.rect.offsetX}px`;
+        this.imageElement.style.top = `${viewChanges.rect.offsetY}px`;
+      }
+    });
   }
 
   bindEvents(state: State): void {
