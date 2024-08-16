@@ -20,7 +20,7 @@ export class ContainerViewStrategy extends AbstractViewStrategy {
     this.element.style.overflow = 'hidden';
     this.element.style.backgroundColor = '#111111';
     this.element.style.textAlign = 'center';
-    this.imageElement.style.transition = 'all 50ms ease';
+    this.imageElement.style.transition = 'all 0.05s linear';
     this.imageElement.style.objectFit = 'contain';
     this.imageElement.style.width = '100%';
     this.imageElement.style.height = '100%';

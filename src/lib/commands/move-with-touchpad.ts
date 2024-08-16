@@ -1,6 +1,5 @@
 import { MousePosition, State } from '../states/state';
 import { getMoveOffset } from '../utils/get-move-offset';
-import { isDoubleTapForMac } from '../utils/is-double-tap-for-mac';
 import { isTrackpadMove } from '../utils/is-trackpad-move';
 import { AbstractCommand } from './command';
 
@@ -22,6 +21,6 @@ export class MoveWithTouchpadCommand extends AbstractCommand {
   }
 
   isExecutable(_: State, event: WheelEvent & { wheelDeltaY: number }): boolean {
-    return isTrackpadMove(event) && !isDoubleTapForMac(event);
+    return isTrackpadMove(event);
   }
 }
