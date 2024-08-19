@@ -1,7 +1,7 @@
 {
   "name": "@umutcakir/image-zoom",
   "description": "Image Zoom is a versatile JavaScript library that enables users to zoom in and out on images, as well as pan around them with ease. Designed with a focus on modern design patterns, this library supports advanced interaction methods, including double-tap zooming for MacOS trackpads and custom key bindings for a seamless user experience.",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "Umut Çakır",
   "keywords": ["typescript", "vite", "image zoom", "panning", "zoomable images"],
   "main": "dist/image-zoom.umd.js",
